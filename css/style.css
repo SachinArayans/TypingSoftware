@@ -1,0 +1,380 @@
+body {
+    margin: 0px;
+    font-family: Arial;
+    font-size: 16px;
+    background: #eee;
+    background: radial-gradient(#fff, #eee);
+    background: -webkit-radial-gradient(#fff, #eee); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#fff, #eee); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#fff, #eee); /* For Firefox 3.6 to 15 */
+    background: url(http://thetypers.com/img/body-bg.png);
+ 
+}
+a:link{
+    text-decoration: none;
+}
+.top-menu{
+    width: 100%;
+    position: fixed;
+    background: #071543;
+    background: -webkit-gradient(linear, left top, left bottom, from(#071543), to(#0C5DA3));
+    background:  -moz-linear-gradient(top,  #071543,  #0C5DA3);
+    height: 40px;
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0px 0px 10px;
+    
+}
+@keyframes flip{
+    0% {
+    transform: rotate3d(90deg);
+    }
+50%{
+    transform:  rotateX(180deg);
+}
+100%{
+}
+}
+.top-menu h3{
+    display: inline;
+    line-height: 40px;
+    color: #fff;
+    margin-left: 0px;
+    font-family: "Segoe UI", Arial, "Helvetica Neue",  Segoe, Helvetica, "Lucida Grande";
+    font-size: 30px;
+    padding: 10px 10px 10px 5px;
+    border-radius: 0px 0px 20px 20px;
+    background: #eee;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eee));
+    background: -moz-linear-gradient(top, #FFFFFF, #eee);
+    box-shadow: 1px 5px 20px #000;
+}
+.bottom-link{
+color:#fff;
+text-decoration:none;
+display:inline-block;
+width:auto;
+height: 40px;
+line-height:40px;
+font-size:20px;
+font-family:arial;
+float: right;
+transition: 0.6s;
+text-align: center;
+padding: 0px 12px 0px 15px;
+
+}
+
+.bottom-link:hover{
+background: #03AAAC;
+
+}
+.bottom-link:active{
+background:#fff;
+color: #000;
+animation: flip 0.5s ease-out 1;
+}
+
+
+.button{
+    height: 50px;
+    color: White;
+    text-decoration: none;
+    background: #071543;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 3px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+.button:hover{
+    background: #081b5b;
+    transition:0.4s;
+}
+
+
+.sidemenu{
+    top: 40px;
+    left: 0px;
+    width: 200px;
+    display: block;
+    position: fixed;
+    background: #A6B0CC;
+    color: #252525;
+    text-align: left;
+    overflow: auto;
+    z-index: 1;
+    
+}
+.sidemenu h3{
+    border-bottom: 1px solid #000;
+    padding-left: 10px;
+}
+.sidemenu h4{
+    padding-left: 20px;
+}
+.sidemenu a{
+    color: #0C0C0C;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    padding-left: 40px;
+}
+.sidemenu a:hover{
+    background: #071543;
+    transition: 0.6s;
+    color: #fff;
+}
+.active{
+    color: #000;
+    background: #fff;
+    animation: flip 0.5s ease-out 1;
+}
+.sitelogo{
+    margin-top: 40px;
+    margin-left: 0px;
+    background: rgba(33, 141, 234, 0.3);
+    background: url(http://thetypers.com/img/dp.png);
+    height: 200px;
+    padding: 10px 50px;
+    color: #fff;
+}
+.bodydiv{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 205px;
+    margin-right: 5px;
+    padding: 10px;
+    height: min-content;
+    border-radius: 3px;
+    text-align: center;
+    background: #E2E5EF;
+    width: auto;
+    position: relative;
+}
+.main-bodydiv{
+    margin: auto;
+     margin-top: 20px;
+    padding: 20px;
+    padding-left: 70px;
+    height: min-content;
+    border-radius: 0px;
+    text-align: left;
+    background: #f3f2f2;
+    width: 75%;
+    position: relative;
+box-shadow:0px 0px 3px #000;
+}
+.main-bodydiv p{
+    font-size: 20px;
+    color: #000;
+}
+.main-bodydiv img{
+    width: 90%;
+    height: 70%;
+}
+.advt{
+    width:150px;
+    height:500px;
+    background: none;
+}
+
+.men{
+    width: 85%;
+    float: left;
+}
+.rside{
+   width: 15%;
+   float: left;
+   overflow-x: hidden;
+   overflow-y: hidden; 
+   text-overflow: clip;
+   text-align: center;
+   color: #252525;
+   
+}
+
+.rside a{
+    color: #252525;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.rside a:hover{
+    color: #5e5e5e;
+}
+.side-feedback{
+    
+    background: #071543;
+    color: #fff;
+    font-size: 20px;
+    padding: 7px;
+    position: fixed;
+    z-index: 1000000;
+    left: 0px;
+    top: 50%;
+    border-radius: 0px 5px 5px 0px;
+    opacity: 0.2;
+    transition: 0.3s;
+}
+.side-feedback:hover{
+    
+    background: #071543;
+    color: #fff;
+    font-size: 20px;
+    padding: 7px;
+    position: fixed;
+    z-index: 1000000;
+    left: 0px;
+    top: 50%;
+    border-radius: 0px 5px 5px 0px;
+    opacity: 1;
+}
+
+.footer{
+    margin-top: 40px;
+    margin-left: 0px;
+    background: #071543;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0C5DA3), to(#071543));
+    background: -moz-linear-gradient(top,  #0C5DA3,  #071543);
+    height: auto;
+    padding: 20px 50px;
+    color: #fff;
+}
+
+.footer a{
+    color: #E2E5EF;
+    text-decoration: underline;
+}
+
+.footer a:hover{
+    color: #fff;
+}
+/*manual css started*/
+.main-manual{
+    background: #fff;
+    margin: 20px 2px 20px 215px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.main-manual p{
+    font-size: 18px;
+    margin-left: 20px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.main-manual img {
+    width: 100%;
+    height: auto;
+
+}
+.ui:hover{
+    background: #fff;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.ui {
+    color: #000;
+}
+/*new layout index page*/
+.bg2{
+    background: url('http://thetypers.com/img/index-bg.png') rgba(33, 141, 234, 1);
+    color: #fff;
+    border-radius: 5px;
+    width: 200px;
+    height:auto;
+    margin-top: -150px;
+    margin-left: 20%;
+    padding: 40px;
+    padding-left: 200px;
+    
+}
+.index-menu{
+    display: block;
+    padding: 0px;
+    background: #218dea;
+    margin-left: 0px;
+    position: relative;
+    width: 500px;
+    height: auto;
+}
+.bg3{
+    padding: 0px;
+    background: #0C5DA3;
+    border-bottom: 1px solid #218dea;
+    display: block;
+}
+.bg3:hover{
+    background: #03AAAC;
+    transition: 0.5s;
+    color: #218dea;
+}
+
+.bg3 i{
+    padding: 30px;
+    background: #03AAAC;
+    font-size: 55px;
+    color: #fff;
+}
+
+.index-con{
+    margin-left: 20px;
+    margin-top: 0px;
+    font-size: 25px;
+    font-family: Arial;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+}
+.index-select{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    color: #424141;
+    background: #fff;
+    border: 1px solid #03AAAC;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: Arial;
+}
+.test-submit{
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    color: #fff;
+    background: rgba(33, 141, 234, 1);
+    border: 1px solid #03AAAC;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: Arial;
+    cursor: pointer;
+}
+
+@keyframes spin{
+0%{
+transform:rotate(0deg);
+}
+50%{
+}
+100%{transform:rotate(360deg);
+}
+}
+@keyframes spinreverse{
+0%{
+transform:rotate(360deg);
+}
+50%{
+}
+100%{transform:rotate(0deg);
+}
+}
+.fa-facebook-square:hover,.fa-twitter-square:hover,.fa-google-plus-square:hover,.fa-thumbs-o-up:hover{
+    animation:  spin 0.6s ease-in-out  1;
+}
+
